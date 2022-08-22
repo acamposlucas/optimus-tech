@@ -17,21 +17,21 @@
           <img class="w-[32px] h-[32px]" src="./assets/logo.svg" alt="">
           <strong class="text-lg font-medium text-gray-800">OptimusTech</strong>
         </div>
-        <button class="flex items-center justify-center border-none absolute right-4 top-5 laptop:hidden" aria-controls="main-navigation">
+        <button class="flex items-center justify-center border-none absolute right-4 top-5 laptop:hidden" id="nav-button" aria-controls="main-navigation">
           <i class="ph-list ph-xl" aria-hidden="true"></i>
         </button>
-        <div class="
-          rounded-lg py-4 px-4
-          MOBILE | flex flex-col gap-4 absolute right-1/2 top-16 translate-x-1/2 bg-red-100 w-full
+        <div id="main-navigation" class="
+          rounded-lg py-4 px-4 hidden
+          MOBILE | flex flex-col gap-4 absolute right-1/2 top-16 translate-x-1/2 bg-red-800 w-full
           TABLET | tablet:right-0 tablet:translate-x-0 tablet:w-auto
           LAPTOP && DESKTOP | laptop:static laptop:flex-row laptop:items-center laptop:flex-1 laptop:justify-between laptop:bg-transparent laptop:max-w-max laptop:translate-x-0"
         >
-          <nav class="flex items-center" id="main-navigation">
+          <nav class="flex items-center">
             <ul class="
-              text-gray-500 font-medium w-full
+              text-white font-medium w-full
               MOBILE | items-center flex flex-col gap-4
               TABLET | tablet:items-end
-              DESKTOP | laptop:flex-row laptop:gap-8"
+              DESKTOP | laptop:flex-row laptop:gap-8 laptop:text-gray-500"
             >
               <li><a href="#">Home</a></li>
               <li><a href="#">Produtos</a></li>
@@ -44,8 +44,20 @@
             TABLET | tablet:items-end
             DESKTOP | laptop:flex-row"
           >
-            <a href="#" class="px-[18px] py-[10px] rounded-lg text-gray-500 font-medium hover:bg-primary hover:text-white transition-colors ease-in">Entrar</a>
-            <a href="#" class="bg-primary rounded-lg px-[18px] py-[10px] text-white font-medium border border-transparent hover:bg-white hover:text-primary hover:border-primary transition-colors ease-in">Cadastrar</a>
+            <a
+              href="#"
+              class="
+              px-[18px] py-[10px] rounded-lg
+              MOBILE | text-white
+              DESKTOP | laptop:text-gray-500 font-medium laptop:hover:bg-primary laptop:hover:text-white transition-colors ease-in"
+              >
+              Entrar
+            </a>
+            <a href="#" class="
+              bg-white text-primary laptop:bg-primary rounded-lg px-[18px] py-[10px] laptop:text-white font-medium border border-transparent hover:bg-white laptop:hover:text-primary laptop:hover:border-primary transition-colors ease-in"
+              >
+              Cadastrar
+            </a>
           </div>
         </div>
       </header>
