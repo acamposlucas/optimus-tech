@@ -24,7 +24,7 @@
           rounded-lg py-4 px-4
           MOBILE | flex flex-col gap-4 absolute right-1/2 top-16 translate-x-1/2 bg-red-100 w-full
           TABLET | tablet:right-0 tablet:translate-x-0 tablet:w-auto
-          LAPTOP && DESKTOP | laptop:static laptop: laptop:flex-row laptop:items-center laptop:flex-1 laptop:justify-between laptop:bg-transparent laptop:max-w-max laptop:translate-x-0"
+          LAPTOP && DESKTOP | laptop:static laptop:flex-row laptop:items-center laptop:flex-1 laptop:justify-between laptop:bg-transparent laptop:max-w-max laptop:translate-x-0"
         >
           <nav class="flex items-center" id="main-navigation">
             <ul class="
@@ -49,6 +49,13 @@
           </div>
         </div>
       </header>
+      <main class="max-w[1440px] laptop:w-full laptop:mx-auto mx-4">
+        <section class="max-w-[800px] my-12 tablet:my-20 laptop:my-24 mx-auto text-center flex flex-col gap-6">
+          <span class="text-primary text-sm tablet:text-base font-semibold leading-6">Sobre nós</span>
+          <h1 class="font-semibold text-3xl tablet:4xl laptop:text-5xl leading-tight tracking-tighter text-gray-900">Por que somos diferentes?</h1>
+          <p class="text-gray-500 text-base laptop:text-[20px] leading-snug">Nós focamos nos detalhes de tudo que fazemos. Tudo para ajudar as empresas de todo o mundo a se concentrarem naquilo que é realmente importante para elas.</p>
+        </section>
+      </main>
     </div>
     <script src="/main.js"></script>
   </body>
