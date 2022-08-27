@@ -12,8 +12,7 @@
     <title>OptimusTech | Página Inicial</title>
   </head>
   <body class="font-sans">
-    <div class="max-w-[1440px] desktop:w-full desktop:mx-auto mx-4">
-      <header class="py-[18px] px-8 flex items-center justify-between relative">
+      <header class="container py-[18px] flex items-center justify-between relative">
         <div class="flex items-center gap-2">
           <img class="w-[32px] h-[32px]" src="./assets/logo.svg" alt="">
           <strong class="text-lg font-medium text-gray-800">OptimusTech</strong>
@@ -62,7 +61,7 @@
           </div>
         </div>
       </header>
-      <main class="max-w[1440px] laptop:w-full mx-4 tablet:mx-auto">
+      <main class="container">
         <section class="max-w-[800px] my-12 tablet:my-20 laptop:my-24 mx-auto text-center flex flex-col gap-6">
           <span class="text-primary text-sm tablet:text-base font-semibold leading-6">Sobre nós</span>
           <h1 class="font-semibold text-3xl tablet:4xl laptop:text-5xl leading-tight tracking-tighter text-gray-900">Por que somos diferentes?</h1>
@@ -148,17 +147,32 @@
             </section>
           </section>
         </section>
-        <section class="max-w-[1280px] p-12 tablet:p-16 bg-red-100 rounded-2xl mx-auto tablet:text-center">
-          <p class="text-sm text-primary font-semibold mb-4">Veja o que nossos colaboradores falam sobre nós</p>
-          <h2 class="text-xl tablet:text-2xl desktop:text-4xl font-medium text-gray-900">OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.</h2>
-          <div class="mt-8 text-center">
-            <img src="./assets/avatar.png" alt="Júlia Castro. Foto" class="mb-4 mx-auto">
-            <h3 class="text-gray-900 font-medium">Júlia Castro</h3>
-            <strong class="text-gray-500 text-sm font-normal">Desenvolvedora Web</strong>
+        <section class="container">
+          <div class="max-w-[1216px] p-12 tablet:p-16 bg-red-100 rounded-2xl mx-auto tablet:text-center">
+            <p class="text-sm text-primary font-semibold mb-4">Veja o que nossos colaboradores falam sobre nós</p>
+            <h2 class="text-xl tablet:text-2xl desktop:text-4xl font-medium text-gray-900">OptimusTech se importa com a saúde dos seus colaboradores e sempre procura nos dar todo tipo de auxílio possível.</h2>
+            <div class="mt-8 text-center">
+              <img src="./assets/avatar.png" alt="Júlia Castro. Foto" class="mb-4 mx-auto">
+              <h3 class="text-gray-900 font-medium">Júlia Castro</h3>
+              <strong class="text-gray-500 text-sm font-normal">Desenvolvedora Web</strong>
+            </div>
           </div>
         </section>
       </main>
-    </div>
+      <footer class="bg-gray-50 py-24 flex flex-col gap-8">
+       <div class="flex flex-col gap-10">
+          <div class="text-center">
+            <h2 class="text-4xl text-gray-900 font-semibold mb-5">Acompanhe as nossas oportunidades</h2>
+            <p class="text-lg text-gray-500">Seja o primeiro a saber quando novas vagas serão abertas!</p>
+          </div>
+          <form class="flex justify-center">
+            <label for="email"></label>
+            <input type="text" placeholder="Seu e-mail" id="email" class="py-3 px-4 text-gray-500 placeholder:text-gray-500 rounded-lg border-2 border-gray-300 w-full max-w-[360px] mr-4 outline-none focus:border-primary">
+            <button type="submit" class="bg-primary rounded-lg px-5 py-3 text-white border border-transparent hover:border-primary hover:text-primary hover:bg-white focus:bg-white focus:border-primary focus:text-primary outline-none transition-colors">Cadastrar</button>
+          </form>
+       </div>
+       <span class="text-gray-400 text-center block">&copy; 2022 OptimusTech. Todos os direitos reservados.</span>
+      </footer>
     <script src="/main.js"></script>
   </body>
 </html>
