@@ -17,10 +17,19 @@
           <img class="w-[32px] h-[32px]" src="./assets/logo.svg" alt="">
           <strong class="text-lg font-medium text-gray-800">OptimusTech</strong>
         </div>
-        <button class="flex items-center justify-center border-none absolute right-0 top-5 laptop:hidden" id="nav-button" aria-controls="main-navigation">
-          <i class="ph-list ph-xl" aria-hidden="true"></i>
+        <button
+          class="flex items-center justify-center border-none absolute right-0 top-5 laptop:hidden"
+          id="nav-button"
+          aria-controls="main-navigation"
+          aria-expanded="false"
+        >
+          <i class="ph-list ph-xl" aria-hidden="true" id="list-icon"></i>
+          <i class="ph-x ph-xl" aria-hidden="true" id="close-icon"></i>
         </button>
-        <div id="main-navigation" class="
+        <div 
+          aria-expanded="false"
+          id="main-navigation"
+          class="
           rounded-lg py-4 px-4 hidden
           MOBILE | flex flex-col gap-4 absolute right-1/2 top-16 translate-x-1/2 bg-red-800 w-full
           TABLET | tablet:right-0 tablet:translate-x-0 tablet:w-auto
