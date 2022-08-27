@@ -10,6 +10,8 @@ NAV_BUTTON.addEventListener('click', () => {
   MAIN_NAVIGATION.setAttribute("aria-expanded", isNavigationOpen)
 });
 
+window.innerWidth >= 1024 ? MAIN_NAVIGATION.classList.remove('hidden') : null;
+
 window.addEventListener('resize', () => {
   let viewportWidth = window.innerWidth;
 
